@@ -1,3 +1,17 @@
 spring:
   application:
-    name: ratemyboss2
+    name:ratemyboss2
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ratemyboss
+    username: postgres
+    password: Takeoff12!
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+  flyway:
+    enabled: true
